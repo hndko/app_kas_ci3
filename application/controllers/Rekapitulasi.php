@@ -6,6 +6,10 @@ class Rekapitulasi extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        if ($this->session->userdata('logged') != TRUE) {
+            redirect('login');
+        }
+
         $this->load->model('Rekapitulasi_model', 'Rekapitulasi');
         $this->load->model('kasMasuk_model', 'kasMasuk');
         $this->load->model('kasKeluar_model', 'kasKeluar');

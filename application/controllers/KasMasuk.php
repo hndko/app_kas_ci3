@@ -6,6 +6,10 @@ class KasMasuk extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        if ($this->session->userdata('logged') != TRUE) {
+            redirect('login');
+        }
+
         $this->load->model('kasMasuk_model', 'kasMasuk');
         date_default_timezone_set('Asia/Jakarta');
     }
