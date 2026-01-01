@@ -1,0 +1,48 @@
+# ===========================================
+# Environment & Sensitive Files
+# ===========================================
+.env
+*.env.local
+
+# ===========================================
+# IDE & Editor
+# ===========================================
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ===========================================
+# OS Generated Files
+# ===========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# ===========================================
+# CodeIgniter Generated Files
+# ===========================================
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+# ===========================================
+# Composer
+# ===========================================
+/vendor/
+
+# ===========================================
+# Node (if any frontend build)
+# ===========================================
+node_modules/
