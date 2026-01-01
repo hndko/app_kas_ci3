@@ -29,6 +29,9 @@
   <!-- Template Main CSS File -->
   <link href="<?= base_url() ?>assets/css/style.css" rel="stylesheet">
 
+  <!-- Custom Modern CSS -->
+  <link href="<?= base_url() ?>assets/css/custom.css" rel="stylesheet">
+
   <!-- =======================================================
   * Template Name: NiceAdmin
   * Updated: May 30 2023 with Bootstrap v5.3.0

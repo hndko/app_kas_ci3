@@ -68,7 +68,7 @@ CREATE TABLE `tb_users` (
 --
 
 INSERT INTO `tb_users` (`user_id`, `nama_lengkap`, `username`, `password`, `created_at`) VALUES
-(1, 'Administrator', 'admin', '$2y$10$zyI3dPmGpm1dFD0Rx8siNuw5obNLqDONeIICFiKQrzcMU.p2.s1yO', '2023-06-29 18:51:26');
+(1, 'Administrator', 'admin', '$2a$12$wIXgMk4b6SJDmYZ666/g4eDl9iGYeIysVT2eQjrSXFTNscfnZ2B4G', '2023-06-29 18:51:26');
 
 --
 -- Indexes for dumped tables

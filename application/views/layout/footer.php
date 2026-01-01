@@ -1,4 +1,29 @@
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="copyright">
+            &copy; <?= date('Y') ?> <strong><span style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">E-KAS</span></strong>.
+            Sistem Manajemen Kas.
+          </div>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <div class="credits">
+            <span class="text-muted small">
+              <i class="bi bi-code-slash me-1"></i>
+              Powered by <a href="https://codeigniter.com" target="_blank" class="text-decoration-none">CodeIgniter 3</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <i class="bi bi-arrow-up-short text-white"></i>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="<?= base_url() ?>assets/vendor/apexcharts/apexcharts.min.js"></script>
@@ -14,11 +39,30 @@
   <!-- Template Main JS File -->
   <script src="<?= base_url() ?>assets/js/main.js"></script>
 
+  <!-- Custom Scripts -->
   <script>
     $(document).ready(function() {
+      // Auto close alerts after 3 seconds
       setTimeout(function() {
         $(".alert").alert('close');
       }, 3000);
+
+      // Add smooth scroll behavior
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+
+      // Add loading animation to buttons on form submit
+      $('form').on('submit', function() {
+        $(this).find('button[type="submit"]').prop('disabled', true).html(
+          '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Memproses...'
+        );
+      });
     });
   </script>
 
