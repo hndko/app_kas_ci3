@@ -11,29 +11,8 @@
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div>
 
-    <!-- Search Bar -->
-    <div class="search-bar d-none d-md-block">
-      <form class="search-form d-flex align-items-center" method="POST" action="#">
-        <input type="text" name="query" placeholder="Cari transaksi..." title="Masukkan kata kunci pencarian">
-        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-      </form>
-    </div>
-
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
-
-        <!-- Notification Icon -->
-        <li class="nav-item dropdown">
-          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-bell"></i>
-            <span class="badge bg-primary badge-number">0</span>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
-            <li class="dropdown-header">
-              <span class="text-muted">Tidak ada notifikasi baru</span>
-            </li>
-          </ul>
-        </li>
 
         <!-- Profile Dropdown -->
         <li class="nav-item dropdown pe-3">
@@ -68,7 +47,7 @@
 
             <li>
               <a class="dropdown-item d-flex align-items-center" href="<?= base_url() ?>">
-                <i class="bi bi-gear me-2 text-secondary"></i>
+                <i class="bi bi-speedometer2 me-2 text-secondary"></i>
                 <span>Dashboard</span>
               </a>
             </li>
