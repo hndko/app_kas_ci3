@@ -1,35 +1,50 @@
 <div align="center">
 
-# 💰 E-KAS - Aplikasi Kas Modern
+# 💰 E-KAS
 
-[![PHP Version](https://img.shields.io/badge/PHP-7.4+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
-[![CodeIgniter](https://img.shields.io/badge/CodeIgniter-3.x-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white)](https://codeigniter.com)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+### Sistem Manajemen Kas Modern
 
-**Sistem manajemen kas modern dengan antarmuka yang elegan dan user-friendly.**
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=flat-square" alt="Status">
+  <img src="https://img.shields.io/badge/PHP-7.4+-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP">
+  <img src="https://img.shields.io/badge/CodeIgniter-3.x-EF4223?style=flat-square&logo=codeigniter&logoColor=white" alt="CodeIgniter">
+  <img src="https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap">
+</p>
 
-[📦 Instalasi](#-instalasi) •
-[✨ Fitur](#-fitur) •
-[📸 Screenshots](#-screenshots) •
-[🛠️ Teknologi](#️-teknologi) •
-[📝 Lisensi](#-lisensi)
+<p align="center">
+  <a href="#-preview">Preview</a> •
+  <a href="#-fitur">Fitur</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-instalasi">Instalasi</a>
+</p>
 
 </div>
 
 ---
 
-## 📋 Tentang Proyek
+## 🎯 Tentang Project
 
-**E-KAS** adalah aplikasi pencatatan kas sederhana namun powerful yang dibangun dengan CodeIgniter 3. Aplikasi ini dirancang untuk membantu Anda mengelola pemasukan dan pengeluaran dengan mudah, cepat, dan terorganisir.
+**E-KAS** adalah aplikasi web untuk manajemen kas yang dibangun sebagai project portfolio. Aplikasi ini mendemonstrasikan kemampuan dalam membangun sistem CRUD lengkap dengan antarmuka modern dan user-friendly.
 
-### 🎯 Mengapa E-KAS?
+### 💡 Highlights
 
-- 🚀 **Cepat & Ringan** - Dibangun dengan CodeIgniter 3 yang terkenal cepat
-- 🎨 **UI Modern** - Desain glassmorphism dengan gradient yang memukau
-- 📱 **Responsive** - Tampil sempurna di desktop maupun mobile
-- 🔐 **Aman** - Dilengkapi sistem autentikasi yang solid
-- 📊 **Rekapitulasi** - Laporan lengkap dengan perhitungan saldo otomatis
+- ✅ Full-stack development dengan PHP & MySQL
+- ✅ UI/UX modern dengan glassmorphism design
+- ✅ Responsive design (mobile-first approach)
+- ✅ Clean code architecture dengan MVC pattern
+- ✅ Environment-based configuration
+
+---
+
+## 📸 Preview
+
+|          Login Page           |           Dashboard           |
+| :---------------------------: | :---------------------------: |
+| 2-Grid layout dengan gradient | Summary cards & quick actions |
+
+|       Form Transaksi       |          Rekapitulasi           |
+| :------------------------: | :-----------------------------: |
+| Modern inputs dengan icons | Tabel dengan kalkulasi otomatis |
 
 ---
 
@@ -37,219 +52,126 @@
 
 <table>
 <tr>
-<td>
+<td width="50%">
 
-### 💵 Pemasukan (Kas Masuk)
+**📊 Dashboard**
 
-- ➕ Tambah transaksi pemasukan
-- ✏️ Edit data transaksi
-- 🗑️ Hapus data
-- 📅 Filter berdasarkan tanggal
+- Ringkasan pemasukan & pengeluaran
+- Perbandingan bulan ini vs bulan lalu
+- Quick action buttons
 
 </td>
-<td>
+<td width="50%">
 
-### 💸 Pengeluaran (Kas Keluar)
+**💵 Transaksi**
 
-- ➕ Catat pengeluaran
-- ✏️ Edit transaksi
-- 🗑️ Hapus data
-- 📊 Ringkasan total
+- CRUD kas masuk
+- CRUD kas keluar
+- Validasi form
 
 </td>
 </tr>
 <tr>
-<td>
+<td width="50%">
 
-### 📈 Dashboard
+**📋 Laporan**
 
-- 📊 Ringkasan bulan ini
-- 📉 Perbandingan bulan lalu
-- 💰 Total keseluruhan
-- ⚡ Quick actions
-
-</td>
-<td>
-
-### 📋 Rekapitulasi
-
-- 📝 Laporan lengkap
-- ➕➖ Saldo berjalan
-- 🖨️ Cetak laporan
-- 📅 Filter periode
+- Rekapitulasi lengkap
+- Saldo berjalan otomatis
+- Print-ready layout
 
 </td>
-</tr>
-</table>
+<td width="50%">
 
-### 🎨 Fitur UI/UX
+**🔐 Keamanan**
 
-| Fitur                | Deskripsi                                   |
-| -------------------- | ------------------------------------------- |
-| 🌙 **Modern Design** | Glassmorphism, gradients, smooth animations |
-| 📱 **Responsive**    | Mobile-first design approach                |
-| 🔔 **Alerts**        | Notifikasi interaktif dengan auto-dismiss   |
-| 🎯 **Icon-rich**     | Bootstrap Icons untuk visual yang jelas     |
-| ⚡ **Fast Loading**  | Optimized assets dan minimal dependencies   |
+- Authentication system
+- Password hashing (bcrypt)
+- Session management
 
----
-
-## 📦 Instalasi
-
-### Prasyarat
-
-- PHP >= 7.4
-- MySQL >= 5.7
-- Apache/Nginx dengan mod_rewrite
-- Composer (opsional)
-
-### Langkah Instalasi
-
-```bash
-# 1. Clone repository
-git clone https://github.com/username/e-kas.git
-
-# 2. Masuk ke direktori
-cd e-kas
-
-# 3. Copy file environment
-cp .env.example .env
-
-# 4. Konfigurasi database di .env
-nano .env
-```
-
-```env
-# Database Configuration
-DB_HOSTNAME=localhost
-DB_USERNAME=root
-DB_PASSWORD=your_password
-DB_DATABASE=db_kas_ci3
-```
-
-```bash
-# 5. Import database
-mysql -u root -p db_kas_ci3 < db_kas_ci3.sql
-
-# 6. Jalankan di browser
-# http://localhost/e-kas/
-```
-
-### 🔐 Login Default
-
-| Username | Password   |
-| -------- | ---------- |
-| `admin`  | `admin123` |
-
-> ⚠️ **Penting:** Segera ubah password setelah login pertama kali!
-
----
-
-## 🛠️ Teknologi
-
-<table>
-<tr>
-<td align="center" width="96">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" width="48" height="48" alt="PHP" />
-<br>PHP 7.4+
-</td>
-<td align="center" width="96">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain.svg" width="48" height="48" alt="CodeIgniter" />
-<br>CodeIgniter 3
-</td>
-<td align="center" width="96">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="48" height="48" alt="MySQL" />
-<br>MySQL
-</td>
-<td align="center" width="96">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="48" height="48" alt="Bootstrap" />
-<br>Bootstrap 5
-</td>
-<td align="center" width="96">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="48" height="48" alt="JavaScript" />
-<br>JavaScript
 </td>
 </tr>
 </table>
 
 ---
 
-## 📁 Struktur Proyek
+## 🛠 Tech Stack
+
+| Category         | Technology              |
+| ---------------- | ----------------------- |
+| **Backend**      | PHP 7.4+, CodeIgniter 3 |
+| **Database**     | MySQL                   |
+| **Frontend**     | HTML5, CSS3, JavaScript |
+| **UI Framework** | Bootstrap 5.3           |
+| **Icons**        | Bootstrap Icons         |
+| **Fonts**        | Google Fonts (Inter)    |
+
+---
+
+## 📁 Struktur Project
 
 ```
 e-kas/
-├── 📂 application/
-│   ├── 📂 config/          # Konfigurasi aplikasi
-│   ├── 📂 controllers/     # Controller (Auth, Dashboard, Kas)
-│   ├── 📂 models/          # Model database
-│   └── 📂 views/           # Template views
-│       ├── 📂 auth/        # Halaman login
-│       ├── 📂 kas-masuk/   # CRUD kas masuk
-│       ├── 📂 kas-keluar/  # CRUD kas keluar
-│       ├── 📂 layout/      # Header, sidebar, footer
-│       └── 📂 rekapitulasi/# Laporan
-├── 📂 assets/
-│   ├── 📂 css/             # Stylesheet
-│   ├── 📂 js/              # JavaScript
-│   └── 📂 vendor/          # Library pihak ketiga
-├── 📄 .env                 # Environment config
-├── 📄 .env.example         # Template environment
-├── 📄 .htaccess            # URL rewriting
-├── 📄 db_kas_ci3.sql       # Database schema
-└── 📄 index.php            # Entry point
+├── application/
+│   ├── config/         # Database & app config
+│   ├── controllers/    # Auth, Dashboard, Kas, Profile
+│   ├── models/         # Database models
+│   └── views/          # UI templates
+├── assets/
+│   ├── css/            # Custom styles
+│   └── vendor/         # Third-party libraries
+├── .env.example        # Environment template
+└── db_kas_ci3.sql      # Database schema
 ```
 
 ---
 
-## 📸 Screenshots
+## ⚡ Instalasi
 
-<details>
-<summary>🖼️ Klik untuk melihat screenshots</summary>
+```bash
+# Clone repository
+git clone https://github.com/username/e-kas.git
+cd e-kas
 
-### Login Page
+# Setup environment
+cp .env.example .env
+# Edit .env dengan konfigurasi database Anda
 
-> 2-Grid layout dengan gradient background
+# Import database
+mysql -u root -p your_database < db_kas_ci3.sql
 
-### Dashboard
+# Jalankan di browser
+# http://localhost/e-kas/
+```
 
-> Summary cards dengan quick actions
-
-### Form Transaksi
-
-> Modern form dengan icons dan placeholders
-
-### Rekapitulasi
-
-> Tabel lengkap dengan kalkulasi saldo
-
-</details>
+**Default Login:** `admin` / `admin123`
 
 ---
 
-## 🤝 Kontribusi
+## 📝 Lessons Learned
 
-Kontribusi selalu diterima! Silakan:
+Dalam mengerjakan project ini, saya mempelajari:
 
-1. 🍴 Fork repository ini
-2. 🌿 Buat branch fitur (`git checkout -b feature/AmazingFeature`)
-3. 💾 Commit perubahan (`git commit -m 'Add AmazingFeature'`)
-4. 📤 Push ke branch (`git push origin feature/AmazingFeature`)
-5. 🔃 Buat Pull Request
-
----
-
-## 📝 Lisensi
-
-Didistribusikan di bawah Lisensi MIT. Lihat `LICENSE` untuk informasi lebih lanjut.
+- Implementasi MVC pattern dengan CodeIgniter
+- Desain UI modern dengan CSS custom properties
+- Manajemen session dan authentication
+- Environment-based configuration untuk keamanan
+- Responsive design dengan Bootstrap grid
 
 ---
 
-## 👨‍💻 Author
+## 👤 Author
+
+**Your Name**
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](https://github.com/username)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/username)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=flat-square&logo=google-chrome&logoColor=white)](https://yourportfolio.com)
+
+---
 
 <div align="center">
 
-**Dibuat dengan ❤️ menggunakan CodeIgniter 3**
-
-⭐ Jangan lupa beri bintang jika proyek ini membantu!
+**⭐ Star this repo if you find it useful!**
 
 </div>
